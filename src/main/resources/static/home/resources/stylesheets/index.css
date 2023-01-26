@@ -1,0 +1,386 @@
+/*#detailContainer > .image-container::-webkit-scrollbar-track{*/
+/*    background-color: transparent;*/
+/*}*/
+
+/*#detailContainer > .image-container::-webkit-scrollbar-thumb{*/
+/*    background-color: rgb(44,62,80);*/
+/*}*/
+
+html {
+    scroll-behavior: smooth;
+    overflow: auto;
+    user-select: none;
+}
+
+.email{
+    user-select: all;
+}
+
+body {
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    overflow: hidden auto;
+    overflow-wrap: break-word;
+}
+
+.menu {
+    height: 3rem;
+}
+
+ul {
+    word-spacing: 2rem;
+    letter-spacing: 0.25rem;
+    padding-right: 2rem;
+    position: fixed;
+    right: 1.25rem;
+}
+
+.home,
+.skills,
+.projects {
+    height: 100vh;
+    width: 90%;
+    margin: auto;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+}
+
+a {
+    text-decoration-line: none;
+    color: rgb(0, 0, 0);
+}
+
+.header {
+    font-size: 5rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    border-bottom: solid 0.0625rem rgb(200, 200, 200);
+}
+
+mark {
+    background-color: rgb(252, 243, 207);
+}
+
+.summary {
+    margin-bottom: 0.5rem;
+}
+
+details summary::marker {
+    display: none;
+    content: '';
+}
+
+.contact-summary {
+    position: relative;
+    left: 2.25rem;
+}
+
+@keyframes blink-effect {
+    0% {
+        color: rgb(179, 182, 183)
+    }
+    100% {
+        color: black
+    }
+}
+
+.contact-summary:hover {
+    cursor: pointer;
+    animation: blink-effect 1s ease-in-out infinite;
+}
+
+.header {
+    color: #333;
+    animation: header 10s infinite;
+}
+
+@keyframes header {
+    25% {
+        color: rgb(241, 148, 138)
+    }
+    50% {
+        color: rgb(247, 220, 111)
+    }
+    75% {
+        color: rgb(93, 173, 226)
+    }
+    100% {
+        color: rgb(165, 105, 189)
+    }
+}
+
+/*summary:focus {*/
+/*    font-size: 2rem;*/
+/*}*/
+.summary:hover {
+    font-size: 150%;
+    cursor: pointer;
+    transition-timing-function: ease-in-out;
+    transition-duration: 500ms;
+}
+
+a[rel="link"]:hover {
+    text-decoration: underline solid black 0.0625rem;
+}
+
+link:hover {
+    text-decoration: underline solid black 0.0625rem;
+}
+
+.about {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+p.about {
+    font-weight: 300;
+}
+
+.contact {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 3.25rem;
+}
+
+.contact-container.-text {
+    align-self: center;
+    line-height: 1.75rem;
+    letter-spacing: 0.1rem;
+}
+
+.contact-container.-text > div {
+    background-color: rgb(242, 243, 244);
+}
+
+.submit-container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.submit:hover {
+    box-shadow: 0 0 0.75rem 0.0625rem rgba(0, 0, 0, 10%);
+    cursor: pointer;
+}
+
+.contact-input {
+    position: absolute;
+    top: 17.5rem;
+    left: 40rem;
+    transition-timing-function: ease-in-out;
+    transition-duration: 500ms;
+}
+
+input,
+textarea {
+    width: 30rem;
+    margin-top: 0.5rem;
+    background-color: rgb(242, 243, 244);
+    border: 0.0625rem solid rgb(242, 243, 244);
+}
+
+textarea {
+    height: 5rem;
+}
+
+.submit {
+    width: 3rem;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 0.0625rem solid rgb(215, 219, 221);
+}
+
+thead > tr > th {
+    border-bottom: solid 0.0625rem rgb(200, 200, 200);
+}
+
+
+tbody > tr > td,
+.about {
+    padding-left: 1.5rem;
+}
+
+.summary {
+    margin-top: 1.5rem;
+    font-size: 2rem;
+}
+
+h5 {
+    font-weight: 200;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-size: 1.9em;
+    color: #000;
+    padding: 0;
+    line-height: 0.8em !important;
+    text-transform: none;
+    height: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+
+h5 span {
+    color: black;
+    animation-delay: 2s;
+}
+
+.title {
+    margin-bottom: 0.25rem;
+}
+
+.skills-item {
+    margin-bottom: 5rem;
+}
+
+.progress {
+    width: 100%;
+    height: 20px;
+    background-color: rgb(229, 231, 233);
+    border-radius: 99px;
+    width: 300px;
+}
+
+.progress-bar {
+    width: 70%;
+    background-color: rgb(241, 148, 138);
+    border-radius: 99px;
+    height: 20px;
+}
+
+.progress-bar::before {
+    content: '70%';
+    display: flex;
+    font-size: 1rem;
+    justify-content: flex-end;
+    padding-top: 0.0625rem;
+    padding-right: 0.5rem;
+    color: white;
+}
+
+.progress-bar.java-script {
+    width: 60%;
+    background-color: rgb(245, 176, 65);
+}
+
+.progress-bar.java-script::before {
+    content: '60%';
+}
+
+.progress-bar.spring-boot {
+    background-color: rgb(247, 220, 111);
+    width: 60%;
+}
+
+.progress-bar.spring-boot::before {
+    content: '60%';
+}
+
+.progress-bar.my-sql {
+    background-color: rgb(130, 224, 170);
+    width: 60%;
+}
+
+.progress-bar.my-sql::before {
+    content: '60%';
+}
+
+.progress-bar.html {
+    background-color: rgb(93, 173, 226);
+    width: 60%;
+}
+
+.progress-bar.html::before {
+    content: '60%';
+}
+
+.progress-bar.css {
+    background-color: rgb(165, 105, 189);
+    width: 50%;
+}
+
+.progress-bar.css::before {
+    content: '50%';
+}
+
+
+.description {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.skills-item,
+.projects-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8.5rem 0.5rem;
+}
+
+.img {
+    background: url("/resources/images/project-image.png") no-repeat;
+    background-size: cover;
+    width: 20rem;
+    height: 20rem;
+}
+
+.info {
+    display: none;
+    text-align: center;
+}
+
+.img:hover .info {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(248, 249, 249);
+}
+
+.info-title {
+    padding-top: 1rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.info-text{
+    padding-top: 1rem;
+    font-size: 1rem;
+
+}
+
+.link-domain{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.link-domain:hover{
+    text-decoration: underline;
+}
+
+.link-container{
+    align-items : center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    padding-top: 2rem;
+}
+
+.link-container > .link{
+    font-size: 1.5rem;
+    border: 0.0625rem solid rgb(214,216,218);
+    border-radius: 0.5rem;
+    background-color: rgb(171, 178, 185);
+    padding: 0.25rem;
+    width: 5rem;
+}
+
+.link-container > .link:hover{
+    filter: brightness(80%);
+}
+
+
