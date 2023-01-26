@@ -8,7 +8,7 @@
 
 html {
     scroll-behavior: smooth;
-    overflow: auto;
+    overflow: hidden auto;
     user-select: none;
 }
 
@@ -331,25 +331,30 @@ h5 span {
 .info {
     display: none;
     text-align: center;
+    width: 100%;
+    height: 100%;
 }
 
 .img:hover .info {
     display: block;
-    width: 100%;
-    height: 100%;
+    width: 20rem;
+    height: 20rem;
     background-color: rgb(248, 249, 249);
 }
 
 .info-title {
     padding-top: 1rem;
+    margin-bottom: unset;
     font-size: 1.3rem;
     font-weight: 500;
 }
 
-.info-text{
-    padding-top: 1rem;
-    font-size: 1rem;
+.info-text:first-of-type{
+    color: rgb(100,100,100);
+}
 
+.info-text{
+    font-size: 1rem;
 }
 
 .link-domain{
@@ -366,8 +371,6 @@ h5 span {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
-    padding-top: 2rem;
 }
 
 .link-container > .link{
@@ -375,8 +378,9 @@ h5 span {
     border: 0.0625rem solid rgb(214,216,218);
     border-radius: 0.5rem;
     background-color: rgb(171, 178, 185);
-    padding: 0.25rem;
-    width: 5rem;
+    width: 3.5rem;
+    height: 2rem;
+    margin-top: 0.75rem;
 }
 
 .link-container > .link:hover{
